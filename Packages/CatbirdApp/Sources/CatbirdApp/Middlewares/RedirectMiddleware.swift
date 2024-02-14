@@ -16,8 +16,7 @@ final class RedirectMiddleware: Middleware {
             return next.respond(to: request) // proxy request
         }
 
-        var uri = redirectURI
-        uri.string += request.url.string
+		let uri = URI(string:  redirectURI.string + request.url.string)
 
         // Send request to redirect host
         return request.send {
