@@ -4,3 +4,5 @@ Catbird.xcodeproj
 DerivedData/
 .DS_Store
 .swiftpm
+/Packages/CatbirdApp/server.pid
+/Packages/CatbirdApp/server.log
